@@ -17,4 +17,4 @@
 #### - Project should include at least one JS Library that we did not cover
 #### - Project must be powered by a data set with at least 100 records
 #### - Project must include some level of user-driven interaction
-#### - Final Visualization. should include at least 3 view
+#### - Final Visualization should include at least 3 view

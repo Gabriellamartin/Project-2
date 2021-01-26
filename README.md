@@ -1,20 +1,10 @@
-# Project-2
+# Music Trends Data Analysis
 
-- 1 Tell a story through data visualizations
-- 2 create an interactive way for others to explore this data
-- 3 create a 10 min presentation
-- 4 chose a project theme (Spotify and music?)
+For Project 2, the group created visualizations to show how music has changed over time. To start Kaleb, found a Spotify Dataset on Kaggle containing data from the last 100 years. Then the data was loaded into SQL to Manipulate the data. Data was used to create an interactive D3 graph along with other visualizations. Finally, we were able to create a webpage. This page contains active links to show our findings and the resources used.
 
-
-## Specific Requirements
-#### - visualization must include a API, HTML/CSS, JavaScript, and at least one database
-#### - create
-- a D3 project (Nonstandard Graph or Chart)
-- Combo of Web Scraping and leaflet or plotly
-- A dashboard page with multiple charts that update the same data
-- a "thick"? Server????????
-
-#### - Project should include at least one JS Library that we did not cover
-#### - Project must be powered by a data set with at least 100 records
-#### - Project must include some level of user-driven interaction
-#### - Final Visualization should include at least 3 view
+# Objectives:
+- Time Analysis on Music Characteristics
+- How did music characteristics change in 2020?
+- Predict popular music characteristics in 2021 to 2025
+- Recommend popular newer songs in 2020-2021 based on user inputs
+- Pop, Rock, Hip Hop, Country, Electronic/EDM genre user inputs

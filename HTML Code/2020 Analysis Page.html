@@ -1,107 +1,125 @@
 <!DOCTYPE html>
-<!I used https://www.w3schools.com/bootstrap4/default.asp to create my starter code for this assignment. >
 <html lang="en">
 <head>
-  <style>
-    /* Style The Dropdown Button */
-    .dropbtn {
-      background-color: #4CAF50;
-      color: white;
-      padding: 16px;
-      font-size: 16px;
-      border: none;
-      cursor: pointer;
-    }
-    
-    /* The container <div> - needed to position the dropdown content */
-    .dropdown {
-      position: relative;
-      display: inline-block;
-    }
-    
-    /* Dropdown Content (Hidden by Default) */
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #f9f9f9;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;
-    }
-    
-    /* Links inside the dropdown */
-    .dropdown-content a {
-      color: black;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-    }
-    
-    /* Change color of dropdown links on hover */
-    .dropdown-content a:hover {background-color: #f1f1f1}
-    
-    /* Show the dropdown menu on hover */
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-    
-    /* Change the background color of the dropdown button when the dropdown content is shown */
-    .dropdown:hover .dropbtn {
-      background-color: #3e8e41;
-    }
-    </style>
-    
-    <div class="dropdown">
-      <button class="dropbtn">Menu</button>
-      <div class="dropdown-content">
-        <a href="file:///Users/gabriellamartin/Desktop/NU/Project%202.HTML#">Home Page</a>
-        <a href="file:///Users/gabriellamartin/Desktop/3D%20Analysis%20Page.html">3D Analysis</a>
-        <a href="file:///Users/gabriellamartin/Desktop/2020%20Analysis%20Page.html">2020 Analysis</a>
-        <a href="file:///Users/gabriellamartin/Desktop/2021-2025%20Predictions.html">2021-2025 Predictions</a>
-        <a href="file:///Users/gabriellamartin/Desktop/Genres.html">Genres</a>
-        <a href="file:///Users/gabriellamartin/Desktop/Songs%20For%20You.Html">Songs For You</a>
-
-      </div>
-    </div>
-  <title>2020 Analysis</title>
+  <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
-  .fakeimg {
-    height: 200px;
-    background: rgb(243, 245, 247);
-  }
+  
+      body {
+background-color: #DADED4;
+}
 
-
-
+<!nav bar>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+   <! link colors>
+    a:link {
+  color: #4D774E;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: #4D774E;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: #39603D;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: #39603D;
+  background-color: transparent;
+  text-decoration: underline;
+}
   </style>
-    <div class="jumbotron text-center" style="margin-bottom:0">
-      <h1>2020 Analysis</h1>
-      <p></p> 
-    </div>
 </head>
 <body>
 
-<div class="container" style="margin-top:30px">
-  <div class="row">
-    <div class="col-sm-4">
-      <h2></h2>
-      <p></p>
-       <img class="rg_i Q4LuWd" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAhFBMVEX///8AAABYWFj8/Pzt7e3n5+dVVVXLy8v39/e8vLyXl5eHh4cEBAQjIyP5+fkODg4fHx93d3ff398YGBgaGhpeXl7U1NQmJibw8PCnp6e0tLRxcXEwMDBgYGDExMTS0tJ9fX2Pj4+fn586OjpGRkaurq5MTExpaWktLS2Li4s/Pz81NTW+VN95AAAPfklEQVR4nO1diZaquhIlxgGRSUBBbW2cPd3//38vFUDJAAalQe5jr3VPX2Uwm0qqKlVFomk9evTo0aNHjx49evTo0aMx2Mu1sRn/3CzX+voZzI2p13aLagPWNH03+0UiTsa3nZzQbeDpVsIuw2bXdvvehReX0Evwb9h2I9/AckwYmOYzjtdOjkkyurwxbf9TgsBx1HZ7X4A+V2D2wL5zCmdaiR+Rs/vddpMrwd5UIpjgX9utrgDPqs6PiPEUtd1wJWBcsYfmsWy79WpYvUwQoc93AIhG3L9BEKFz2wyeAZcSPF7j2b9ZvJB5qRRkMK7bplAKIsGDvN3oa7bLe2ejdWwhuTcwba35CsDaWioax5D5Zd5M/jQ+2jAuZS0+SqUCPgw+u8L55IIPduEiiVDc8l4nU7xfDTX3BVzE1u6fTXEF/5VIcd5QeyvDEHqopWLCd+JzmSrP/Ml5I4/H8I8iB56gGwe60i8Nv/gng3TlXzWEoUxw+gPPgTA58e2MlS/e8s9GsZ9i/SjhB4hrl6LEUOwrXH7lKSp6qIPCCfbqJRqlcDgJzipdfeX7mZIMJgX0APZrNIrBq/1rxeu5Pq7mg5fFEer2jTDTW0x0rHqDiO0D6Eflop8ShofqJEqAtTM3IKqHCL+5Fk4UruEFn4dRnUYJsBayt19XVmXCrGShcFFZL62XIS+A8Us34Z6SgnvKy/0PGXKRp9dCvJxzc3jaD7BWkjGol6HN3jx+8TYXZjATB3xI4z5lGDfEkHv6r05/JvxtlvHTa85c3/4jhmz+paopfIANbxB9r+K+RUPe5a+dIeb8mdcn6WfmPmNQloPnvy6PXtYqwxFza+v1G3FTaBuc3eOzOLFk9lU7w/xDNNG/N9z6BdPIJczIkDsqvWGRb1orw381dVK+m57JQEyYFkMMDf0FQ1Zlv+PUs/2dTE+SyfGuUIpeEcF6GTIK+/TWrZhGDpJZlVkcCmefyJ8x1PkH/wYG+VtZjxzBXirFEoK1Mhwyd35nco01Nkqcm3bGsh/2G2LIDvb3gkDsRFrPqWlxrhGxQSgThbc/Ysjq6/dygKz1Hj2MnYlOnArTuRAdmZTm54t1MmRN7nsxefZeXu7pEREx02osZLA8LR95q5Mh/9zfwYRrc24EmMysDLPz+ySjk49qfKoMeYb5Oa6ZD21c+PjzhOipa+7cOhORfM9ShNSI80+L98mydjNWBbhSBbfOsa6z7KGapsHnzem0kGYUaRvzGHKMzSyEduWLydLAUHin+J5Z5sB6TmVxSjJhvyeJB0OZFNkcss05qlnTN0wPzfk8o6zvvhYpKgJr8UvjlDjfu2TSZqNnxOaJGbsrcQs4CT68jGEyO5G7QC+DjdJsyk5lfXShp2I2AvoF7RRSGog39KzaHE7Xk9pza4zpvZWcuGJbK0n2ctICyNL9DMMqKaAXwaZVipUY5jW8oNFZBzBtuqy+I4dY/J26iN3BRoKKE7hCQEXQBwfuTvfripJoDaXEJ8xPbgoZiv2NP5N1VO7OQ2Fs2yQ9uYnKVHaCKDT7joXQQi6Bw873/McBzymQ4vavODHAXJyz0CIOhAZyLh7b3fNaeShL19dt9krAtqww9feEIWY1Kfuk7JNEipeCH6q/43IBr6LU3zMZcklITikL5QzoKGUSDdUrOdTBFgVfCh7iM4b5nmiKPTDmVOqNj+qRX13SLFi4l7qE72DPNrwgkvGEIWf3xOkPOxgs0fDaj2xbzenDh8ebwH1FhnxVnHAPyKU/fsYUCUZh7nip91gZmG98LD2tnCFXGyOd/jwsryOZabPlQzU7c+wc0ZT301KGvG820oZ8HJhMvjKdJiN44FRRzS8b8YUfsmBGMUMsuC1XGHYSdaHvSVe8GZJhgLl6lRLn6iXwOa6b5O4lMhzxrqcHfrooBbhrJPftxSRUbeQSXLgm/ogZmiKGWIsC7sCcdttK8XNxClJzNxXSXHwEt0SGw5C35hF1diupfNGvVyk6qgLhZcovvjfJGWLwqxmYILzZ5zG0+ZGOTC4SUyBDMQ//k4a3PoyhMNT5CIrA0DyA4uCdsYT46RMZctluimNejCzD0xr4TSTTonOmNj6OoaxYH22GssOLFe2g3kISoHC1LKr4eQx1YShSjpkcJytjNpsZq12qQifiwKSAGpr5ZzIsKhz4OYgujmdAPlMem4CJ0/wzGYJVlDfaj8/fw8RC6sPJ6slrtCnFT2RYWlyOUHD7Cnn3RYqko34cQ+qKfqu9gv8MIMVNpZefm5HhZVlWxFMJIMVKTWyE4Y7mmofH2qRYZfrTCEMIk0AMsNp6ChkO3Gslg89jmLx0AQnEF15YdyZCULxavLcJhmmq9EqMQrStqHBiKi6uMp1IcTjZTTylYsDmGNLXDrG2KyvJ4vELbs9IjGid0qLAhcI7Pg3KEKWBspWjIkdyxi1p/xrSLEXvF1iTZ2X7zTJEIQTb8EpFjl+PNOGcSHFR9FSeGceGGZIxRKMku8J3PsyEyeZRUjxNwriFV8zLdWvjDLPVkaJzwQwCzpjmkyhTml6VpWAeFD+LIVH3SWDYnhgLfl4Vbg98tckUpRTFTCqFWS7FVhjmE3zRckqmh3EcwwRxKUuATRG6S7EA849jWGqzR+sBM22cIpTVARRQLK1L+ASGqeHG+nA5NWhXFBnS4oMS771KHUTzDAf+1/F4vOUmiBKGiCnvJnCs8DGIS6T4EQyF41KGJ8Z1t75c9yv/vsOmQN10iOE2r02dXzO8+beH61AoxQ4xvOYr/EIrDMwvJyfEIqPxCQzFFz6lDMf5t24tMgpD12Xfo5RK8RMYbl1J+F5k6OZrEpxfx/JvLhO+kkvxIxg6vGcj16URjdiZIR181m94c4VIs8T0t88Qyxk+WnpnOKWrbATp4DN9mZsqdtSWGWI90jFlGISQi3FD+mdk6+QAnED+TIlaoXmarYYNxwkci4B8Qb+E8ehaFhWrE1qWaPpbZqgTJpSh6yMiGrDhvoWQZxNmNqFI/rFBhg6trhrZETmRsgmRAydaVKgILqcXku95KbbL0Cay0mkvtRzCziXiuAHTkU6B4bC9JjL06ZAj8tkh37m5LvkIDJ3At0IzsEK4yAIL6QS86W+XIdCgmsYJQACW6VpUjiPbpsfoA5giIl+QnANtMxCMQydh6DrA8v6fD5950982wwjnGZI/1Nkc6TbGEWVoJwwdYBhYQ6AI8gpzDF3K0Pct10+UEGM02mYIFAY+ShkSWVG1SjSNnTC0gWGQMnT9X52WA/rQQzmGphsE1DwS+eal2L6m0bVxkKgNok9MiyjGADQNKFNgqGcMiYiI9I46JlIMTFdgSPp44Fpwq8DJS7FlhpTClU6F4PvAIh2WjDNPT0bho5e6fhD40IOP5Js9dFS4xCfj1gxJj6XumxU4wNiHMTv/FIbEIOrUL02NvkmIBCax+LZOjmANLAa1Fi45BGbCRL82Trw3uASsPrWmiUH0g+RzfoG+thkCFOcWGY66uI6fBJnp7yBD9KtC8S7FLjKkRbBKUgQxdpKhAbkKVSl2lCFAkeJeyAN1hKGKFBPvRlhEsSMMAYpSHHBS7AxDrKRugOKCfX22MwwrqBu2o3aHIYhRzWiwUuwUQ0UpYkaKXWIIqC7FbjFUH4uPQoBuMVQaixnFlGP3GFYwGp1kaKvPNFLT3zmGivPFh+nvGkNMZv3KUlygTjJERxWKd6PRRYbqUqQ1gF1kqBbYyKTYSYZVYjeX+ndIaIKhWgSOUrTr386lEYaqQUaQYu2rRzTC0FSX4pOS209liCqHijvIUFWK9e832BhDVSlO6pZicwzVTD8K6uXXKENF01/3PnVNMlSjWPcqS40yVBuLNS831CxDJYo17/vZLEOTLh3+hGLNrmnDMqSvtT+hWPOeSE0ztJ6HpzouQ7rPRHmQseYFXNphWEqxuz7Ng2GpFOtd8Ks9hsUU6961VdyHlF0MX3zXh1n7UtxOhV2TWCiFzi13K6dYtK7i6xCWS2AXXdsLTWAOi3s5sJpQ2GXt/vyKpFh/GINb7YKPWAorSnD7Jlnc1dzakBwJk10oS0LxDzZP5hddc7njN24dbi7cxy8px03ShWGeczpldvFPNsDm3o1kHyLmR9qYn6ByI43fJIhbw4jVQ/zd/b/Zil7Pr80oWfpwlj/sCivLsSuiiZ0st0iRKdnSQ98/+B3+annhKLe290wSQ8iJIZTsApmnKNlD0c7Zm60skmbv/m1Pp61R/5rlOWTD4UceU59kCyzK157Rs1XftnI9eE61UdjeFuyYPEcjnq28wnist5rFxs4uOhxN9/G/dfG2zN+H2Ux4SbpHjx49evTo0aNHjx49evTo0aNHjx7/TTSx211T0G0CjlD1qs+RYUi2lpkYhtLqu38LmqlxxkyAGuM4rpab/ZZWHOxrr3h6BVkuakEEl4gO/mUSX4xEH+eQB4Gz75bpdi2YOWe9udr1VwFXxQJdvOVunGzi5Z2NwwTW3kVoDlH/75VxeMhmST4t6d+ztprRRwAXgLSB4Wi1GmqavSIXRqs9/L+3htzN0thP26S5oIvHQwI/2wh+kO54edaSVFi2d1iyKUkMmR0T0tnXrHJhmzDUaS6HfDUcpZmpFdSSJJe12FsXSTXGkubKnPmeSHON5wiNNxNtGcz2v/cR5pFPR/hE2hzGJjwS3Z/vL5BGpL00hs11r+R+c3SdzAipFZQBILTaDa5lTWiGYZSUVeiRdkHxYxxGkZ4bkuQo7GF1SFekmyRf/aBZwpD842Hge0UnmrgDhjbp8DWXPVVEytADIktYPAdWBcLJPtrrJJVLt4/D2tShRylDWpbxrX3f6FcpQ+0XHSawVfck7dxUhpBu/K3/3ZgqDOk4vJImYhMNdutjwnBNWce7lZNuGk4ozXdrnzI0E4bktMVu+ntnuEKnGMXkXC+mCVZgSJ4MpIVbFCPRpSNvsgUVMqINGScMD5o+pdU0qQxBDWGoVMgx9NJ9nzKGtB6JaNvlFOoBLokMYcuh8L61eisME4wxqNDLakHf1qG6kBC4Ho7Zxu/00w/K91IyxsarAbozhJ4A9ZYu+t3cyLfAkBwZX2uvBK6CpLLgRLUJWIvxBYrpYJXgHU34z/1sHILanwdEuJShB5oGrMX2hOLEp6GGn+4sAVtVDmxqLey9WVgS0AxgpTLdpn4IkaI30pJ1ICMvgi0BvaFGj9Lj0XJIj9pwhh1FdnqBrmMcReTDzKB1cOTUoTdK1prU4AU17wN8t1pgoKLtTf8jwCMjXv2n5l08/svcevTo0aNHjx49evT4f8D/AJdR4IOTzIzeAAAAAElFTkSuQmCC">
-<br>
-
-      <hr class="d-sm-none">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Project 2</a>
     </div>
+    <ul class="nav navbar-nav">
+      <li><a href="file:///Users/gabriellamartin/Desktop/NU/Project%202.HTML#">Home Page</a></li>
+      <li><a href="file:///Users/gabriellamartin/Desktop/3D%20Analysis%20Page.html">3D Analysis</a></li>
+      <li><a href="file:///Users/gabriellamartin/Desktop/2020%20Analysis%20Page.html">2020 Analysis</a></li>
+      <li><a href="file:///Users/gabriellamartin/Desktop/2021-2025%20Predictions.html">2021-2025 Predictions</a></li>
+      <li><a href="file:///Users/gabriellamartin/Desktop/Genres.html">Genres</a></li>
 
-
+      <li><a href="file:///Users/gabriellamartin/Desktop/Songs%20For%20You.Html">Songs For You</a></li>
+    </ul>
   </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+    
+      <p><a href="https://www.kaggle.com/yamaerenay/spotify-dataset-19212020-160k-tracks/discussion">Dataset</a></p>
+      
+      <p><a href="https://www.nytimes.com/interactive/2015/03/19/upshot/3d-yield-curve-economic-growth.html">3D Graph Inspiration</a></p>
+      
+      <p><a href="https://www.kaggle.com/arunkothari/spotify-trends">Graph Inspiration </a></p>
+      
+      <p><a href="https://docs.google.com/document/d/1a9q5gKpOl7Ch6XI1bqX54ex8ttCCCy1bAl-ZZlbrbQI/edit?usp=sharing">Project Proposal and White Board</a></p>
+      
+      <p><a href="https://github.com/Gabriellamartin/Project-2">Project 2 Repository</a></p>
+   
+      
+      
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1>Music Trends Data Analysis</h1>
+      <p>For Project 2, the group analyzed Music Trends over time. The Spotify Dataset 1921-2020 by Yamaç Eren Ay was used to gather data regarding music trends. In the Data Analysis, the group has analyzed how music has changed in the last century. Also, analyzing how music has changed throughout the year 2020.</p>
+      <hr>
+      <h3>Test</h3>
+      <p>Lorem ipsum...</p>
+    </div>
+    <div class="col-sm-2 sidenav">
 
+    </div>
+  </div>
+</div>
 
+<footer class="container-fluid text-center">
+  <p>Footer Text</p>
+</footer>
 
 </body>
-</html>
 </html>

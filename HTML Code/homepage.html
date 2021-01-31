@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+      body {
+  background-color: #DADED4;
+}
+
+h1 {text-align: center;}
+p {text-align: center;}
+div {text-align: left;}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: ;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="#home">Home</a>
+
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Contents
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+        <a href="file:///Users/gabriellamartin/Desktop/NU/Project%202.HTML#">Home Page</a>
+        <a href="file:///Users/gabriellamartin/Desktop/3D%20Analysis%20Page.html">3D Analysis</a>
+        <a href="file:///Users/gabriellamartin/Desktop/2020%20Analysis%20Page.html">2020 Analysis</a>
+        <a href="file:///Users/gabriellamartin/Desktop/2021-2025%20Predictions.html">2021-2025 Predictions</a>
+        <a href="file:///Users/gabriellamartin/Desktop/Genres.html">Genres</a>
+        <a href="file:///Users/gabriellamartin/Desktop/Songs%20For%20You.Html">Songs For You</a>
+  </div>
+  </div> 
+</div>
+  <title>Home</title>
+<h1 style="font-family:Arial">Music Trends Data Analysis</h1>
+      <p style="font-family:Arial">For Project 2, the group analyzed Music Trends over time. The Spotify Dataset 1921-2020 by Yamaç Eren Ay was used to gather data regarding music trends. In the Data Analysis, the group has analyzed how music has changed in the last century. Also, analyzing how music has changed throughout the year 2020.</p> 
+      
+<div class="container" style="margin-top:30px">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2></h2>
+      <p></p>
+ <br>
+      <h3 style="font-family:Arial">Links</h3>
+      <p></p>
+      <ul style="font-family:Arial">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home Page</a>
+        </li>
+        <li class="nav-item">
+          <a class="Data Set Link" href="https://www.kaggle.com/yamaerenay/spotify-dataset-19212020-160k-tracks/discussion">Dataset</a>
+        </li>
+        <li class="nav-item">
+          <a class="3D Graph Link" href="https://www.nytimes.com/interactive/2015/03/19/upshot/3d-yield-curve-economic-growth.html">3D Graph Inspiration </a>
+        </li>
+        <li class="nav-item">
+            <a class="Line Graph Link" href="https://www.kaggle.com/arunkothari/spotify-trends">Graph Inspiration </a>
+          </li>
+          <li class="nav-item">
+            <a class="Project Proposal and White Board Link" href="https://docs.google.com/document/d/1a9q5gKpOl7Ch6XI1bqX54ex8ttCCCy1bAl-ZZlbrbQI/edit?usp=sharing">Project Proposal and White Board</a>
+          </li>
+          <li class="nav-item">
+            <a class="Repo Link" href="https://github.com/Gabriellamartin/Project-2">Project 2 Repository</a>
+          </li>
+
+      </ul>
+
+<br>     
+    <div class="col-sm-8">
+      <h2 style="font-family:Arial">In our data analysis we plan on creating:</h2>
+      <li style="font-family:Arial">Time Analysis on music characteristics long-term</li>
+      <li style="font-family:Arial">Shorter term focus on how music characteristics changed in 2020 </li>
+      <li style="font-family:Arial">Predict popular characteristics in 2021 to 2025</li>
+      <li style="font-family:Arial">Recommend popular newer songs in 2020-2021 based on user inputs</li>
+      <li style="font-family:Arial">Pop, Rock, Hip Hop, Country, Electronic/EDM genre user inputs</li>
+ 
+    </div>      
+      
+      
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+</body>
+</html>

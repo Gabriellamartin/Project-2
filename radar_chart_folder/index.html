@@ -1,17 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Radar Chart</title>
-		<link rel="stylesheet" type="text/css" href="radar_chart.css">
-	</head>
-	<body>
-		<div class="chart">
-		</div>
-		<script src="https://d3js.org/d3.v5.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
-		<script type="text/javascript" src="radar_chart.js"></script>
-		<canvas id="myChart" width="400" height="400"></canvas>
-  </body>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  
+      body {
+background-color: #DADED4;
+}
+
+<!nav bar>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+   <! link colors>
+    a:link {
+  color: #4D774E;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: #4D774E;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: #39603D;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: #39603D;
+  background-color: transparent;
+  text-decoration: underline;
+}
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Project 2</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="file:///Users/gabriellamartin/Desktop/NU/Project%202.HTML#">Home Page</a></li>
+      <li><a href="file:///Users/gabriellamartin/Desktop/3D%20Analysis%20Page.html">3D Analysis</a></li>
+      <li><a href="file:///Users/gabriellamartin/Desktop/2020%20Analysis%20Page.html">2020 Analysis</a></li>
+      <li><a href="file:///Users/gabriellamartin/Desktop/2021-2025%20Predictions.html">2021-2025 Predictions</a></li>
+      <li><a href="file:///Users/gabriellamartin/Desktop/Genres.html">Genres</a></li>
+
+      <li><a href="file:///Users/gabriellamartin/Desktop/Songs%20For%20You.Html">Songs For You</a></li>
+    </ul>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+    
+      <p><a href="https://www.kaggle.com/yamaerenay/spotify-dataset-19212020-160k-tracks/discussion">Dataset</a></p>
+      
+      <p><a href="https://www.nytimes.com/interactive/2015/03/19/upshot/3d-yield-curve-economic-growth.html">3D Graph Inspiration</a></p>
+      
+      <p><a href="https://www.kaggle.com/arunkothari/spotify-trends">Graph Inspiration </a></p>
+      
+      <p><a href="https://docs.google.com/document/d/1a9q5gKpOl7Ch6XI1bqX54ex8ttCCCy1bAl-ZZlbrbQI/edit?usp=sharing">Project Proposal and White Board</a></p>
+      
+      <p><a href="https://github.com/Gabriellamartin/Project-2">Project 2 Repository</a></p>
+   
+      
+      
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1>Music Trends Data Analysis 2011-2020</h1>
+      <p>For Project 2, the group analyzed Music Trends over time. The Spotify Dataset 1921-2020 by Yamaç Eren Ay was used to gather data regarding music trends.  There is an example of music attributes from 2011-2002.  As you can see, average music attributes have stayed steady over the last 10 years</p>
+      <hr>
+      <h3>Graph of Music Attributes</h3>
+      <p> Orange- Acousticness</p>
+      <p> Red - Energy</p>
+      <p> Green - Instrumentalness</p>
+      <p>Pink - Liveness</p>
+      <p>Black - Mode</p>
+      <p>Purple - Speechiness</p>
+      <p>Brown - Valence</p>
+	</div>
+	
+    <div class="col-sm-2 sidenav">
+
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Footer Text</p>
+</footer>
+
+</body>
 </html>

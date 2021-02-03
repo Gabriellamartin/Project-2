@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <link rel="stylesheet" href="radar_chart.css">
+  
   <style>
   
       body {
@@ -105,8 +108,8 @@ a:active {
       
     </div>
     <div class="col-sm-8 text-left"> 
-      <h1>Music Trends Data Analysis 2011-2020</h1>
-      <p>For Project 2, the group analyzed Music Trends over time. The Spotify Dataset 1921-2020 by Yamaç Eren Ay was used to gather data regarding music trends.  There is an example of music attributes from 2011-2002.  As you can see, average music attributes have stayed steady over the last 10 years</p>
+      <h1>Music Trends Data Analysis</h1>
+      <p>For this section of the project, we decided to see if music has showed any recent trends.  As you can see, over the past 10 years, there have been no substantial changes in musical attributes.</p>
       <hr>
       <h3>Graph of Music Attributes</h3>
       <p> Orange- Acousticness</p>
@@ -116,8 +119,9 @@ a:active {
       <p>Black - Mode</p>
       <p>Purple - Speechiness</p>
       <p>Brown - Valence</p>
-	</div>
-	
+      <div id="content"></div>
+      </div>
+    </div>
     <div class="col-sm-2 sidenav">
 
     </div>
@@ -129,4 +133,5 @@ a:active {
 </footer>
 
 </body>
+<script src="radar_chart.js"></script>
 </html>
